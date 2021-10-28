@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from routes.contato import contato
 from config.openapi import tags_metadata
+from mangum import Mangum
 
 app = FastAPI(
     title="Users API",
@@ -9,3 +10,7 @@ app = FastAPI(
 )
 
 app.include_router(contato)
+
+handler = Mangum(app=app)
+
+
