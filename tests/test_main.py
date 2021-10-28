@@ -13,10 +13,10 @@ def test_create_contato():
     response = client.post(
         "/",
         json={
-            "numerodetelefone": 51234,
-            "nome": "5string1234",
-            "sobrenome": "5string1234",
-            "email": "5string1234@"
+            "numerodetelefone": 651234,
+            "nome": "65string1234",
+            "sobrenome": "65string1234",
+            "email": "65string1234@"
         },
     )
     assert response.status_code == 200
