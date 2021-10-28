@@ -5,8 +5,6 @@ client = TestClient(app)
 
 
 
-    )
-    assert response.status_code == 200
 
 
 
