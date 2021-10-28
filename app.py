@@ -9,6 +9,7 @@ app = FastAPI(
     openapi_tags=tags_metadata,
 )
 
+
 app.include_router(contato)
 
 handler = Mangum(app=app)
